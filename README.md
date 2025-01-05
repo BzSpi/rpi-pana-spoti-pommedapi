@@ -2,14 +2,24 @@
 
 ## Goal
 
-Having a Raspberry plugged on a Panasonic SA-PM92X and playing Radio Pomme d'API from Audio In
+Having a Raspberry plugged on a Panasonic SA-PM92 and playing Radio Pomme d'API from Audio In
 at startup and Spotify from DAC with Spotify Connect.
 
 Easy to use for kids and parents :) 
 
 Kept as README for the moment, I hope anytime I'll be able to provide something for flexible and automated.
 
-## Setup
+## Overall configuration
+
+Plug it like this:
+- Raspberry USB-A to Panasonic DAC USB-B
+- Raspberry Audio out to Panasonic Aux In (Unfortunately, only mono for this configuration)
+- Raspberry Power to Panasonic USB-A In (starts the Pi where stereo is turned on - avoid having Pi turned on all the time)
+
+Plug the power input of your Raspberry on the Panasonic SA-PM92 USB input and your Raspberry will start when you turn 
+on the stereo saving bandwidth and power.
+
+## Raspberry Setup
 
 Tested ont Raspbian / Raspberry Pi OS.
 
@@ -142,5 +152,4 @@ LIBRESPOT_FORMAT="S24"
 
 ## Bonus
 
-Plug the power input of your Raspberry on the Panasonic SA-PM92X USB input and your Raspberry will start when you turn 
-on the stereo saving bandwidth and power.
+
